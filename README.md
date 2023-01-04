@@ -1,27 +1,57 @@
-# OSM
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+# How to use OpenStreetMap with angular
 
-## Development server
+![App Screenshot](https://i.ibb.co/GFdLbzp/osmAng.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+OpenStreetMap (OSM) is a free, open geographic database updated and maintained by a community of volunteers via open collaboration. Contributors collect data from surveys, trace from aerial imagery and also import from other freely licensed geodata sources.
+This repository was made with the aim of helping angular developers to easily implement (OSM) in their projects.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Author
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [@devIbtihadj](https://github.com/devIbtihadj)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Badges
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# Hi, I'm Ibtihadj! 👋
+
+
+## 🚀 About Me
+I'm a passionate fullstack developer from Togo
+
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+
+## Tech Stack
+
+**Client:** Angular
+
+
+
+
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/GFdLbzp/osmAng.png)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+

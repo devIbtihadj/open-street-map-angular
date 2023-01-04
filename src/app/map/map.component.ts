@@ -59,6 +59,10 @@ export class MapComponent implements OnInit{
       attribution: '&copy; <a href="https://1938.com.es">Web Inteligencia Artificial</a>'
     });
 
+
+    const devMarker = L.marker([this.lat, this.lon]).bindPopup(this.TITRE)
+    devMarker.addTo(this.map)
+
     //Simple marker pour admin (départ : Université de Lomé, Rue 4, Lomé, Togo)
     const lonDep = 1.211894685489554;
     const latDep = 6.176637212131962;
