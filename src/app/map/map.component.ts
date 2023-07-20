@@ -39,6 +39,7 @@ export class MapComponent implements OnInit{
       center: [this.lat, this.lon],
       attributionControl: false,
       zoom: 14,
+      maxBounds: L.latLngBounds(L.latLng(5.9288, -0.2211), L.latLng(11.1389, 1.8067)) // Limites du Togo
     });
 
     //Personalisation d'icone
@@ -58,6 +59,25 @@ export class MapComponent implements OnInit{
       maxZoom: 19,
       attribution: '&copy; <a href="https://1938.com.es">Web Inteligencia Artificial</a>'
     });
+
+    // Chargez le fichier GeoJSON du Togo et ajoutez-le à la carte
+    fetch('assets/togo.geojson')
+      .then(response => response.json())
+      .then(data => {
+        // Créez une couche GeoJSON pour le Togo
+        const togoLayer = L.geoJSON(data, {
+          style: {
+            color: 'blue', // Couleur des contours du Togo
+            weight: 2, // Épaisseur des contours
+            fillOpacity: 0 // Pas de remplissage intérieur
+          }
+        });
+
+        // Ajoutez la couche du Togo à la carte
+        togoLayer.addTo(this.map);
+
+        // Ajustez le niveau de zoom et le centre de la carte pour cadrer le Togo
+        this.map.fitBounds(togoLayer.getBounds());
 
 
     const devMarker = L.marker([this.lat, this.lon]).bindPopup(this.TITRE)
@@ -92,6 +112,7 @@ export class MapComponent implements OnInit{
       useZoomParameter : true
     }).addTo(this.map);
     tiles.addTo(this.map);
-  }
+  })
+}
 }
 
